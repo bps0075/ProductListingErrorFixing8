@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Product Listing Website</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">
+          <h1>Product Listing Website</h1>
+        </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-home"></i> Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-boxes"></i> Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="fas fa-phone"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Dark Mode Switch -->
+  <div class="dark-mode-switch">
+    <input type="checkbox" id="dark-mode-switch" onchange="switchTheme()">
+    <label for="dark-mode-switch" class="dark-mode-switch-label">
+      <i class="fas fa-adjust"></i>
+    </label>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mt-5">
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <label for="search-input" class="form-label">Search for products:</label>
+      <input type="text" id="search-input" class="form-control" placeholder="Search for products">
+      <button type="button" class="btn btn-primary" id="search-button"><i class="fas fa-search"></i></button>
+    </div>
+
+    <!-- Product Cards -->
+<div class="product-cards">
+  <!-- Product Card -->
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/300x300" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">Product Title</h3>
+      <h4 class="product-price">$99.99</h4>
+      <button type="button" class="btn btn-primary btn-block">Add to Cart</button>
+    </div>
+  </div>
+  <!-- Product Card -->
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/300x300" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">Product Title</h3>
+      <h4 class="product-price">$99.99</h4>
+      <button type="button" class="btn btn-primary btn-block">Add to Cart</button>
+    </div>
+  </div>
+  <!-- Product Card -->
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/300x300" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">Product Title</h3>
+      <h4 class="product-price">$99.99</h4>
+      <button type="button" class="btn btn-primary btn-block">Add to Cart</button>
+    </div>
+  </div>
+  <!-- Product Card -->
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/300x300" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">Product Title</h3>
+      <h4 class="product-price">$99.99</h4>
+      <button type="button" class="btn btn-primary btn-block">Add to Cart</button>
+    </div>
+  </div>
+  <!-- Product Card -->
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/300x300" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">Product Title</h3>
+      <h4 class="product-price">$99.99</h4>
+      <button type="button" class="btn btn-primary btn-block">Add to Cart</button>
+    </div>
+  </div>
+  <!-- Product Card -->
+  <div class="product-card">
+    <div class="product-image">
+      <img src="https://via.placeholder.com/300x300" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h3 class="product-title">Product Title</h3>
+      <h4 class="product-price">$99.99</h4>
+      <button type="button" class="btn btn-primary btn-block">Add to Cart</button>
+    </div>
+  </div>
+</div>
+</main>
+<!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#" class="footer-brand">
+          <h1>Product Listing Website</h1>
+        </a>
+        <p>Copyright &copy; 2023</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
+  
